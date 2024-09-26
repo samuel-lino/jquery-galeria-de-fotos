@@ -7,10 +7,13 @@ $(document).ready(function(){
         e.preventDefault();
         const endereçoImagem = $("#url-img").val();
         const novoItem = $('<li style="display:none;"></li>');
-        $(`<img src="${endereçoImagem}"/>`).appendTo(novoItem);
+        const divNova = $('<div class="container"></div>');
+        $(`<img src="${endereçoImagem}"/>`).appendTo(divNova);
         $(`<div class="imagem-link">
             <a href="${endereçoImagem}" target="_blank" title="Ver imagem em tamanho real">Ver foto em tamanho real</a>
-            </div>`).appendTo(novoItem);
+            </div>`).appendTo(divNova);
+
+        $(divNova).appendTo(novoItem);
         
         $(novoItem).appendTo('ul');
         $(novoItem).fadeIn(1000);
