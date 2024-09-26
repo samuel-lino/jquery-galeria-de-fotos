@@ -58,7 +58,7 @@ ul{
 }
 
 ul li{
-    max-width: 24vw;
+    width: 24vw;
     list-style: none;
     margin: 0.1%;
 }
@@ -92,7 +92,7 @@ ul li:hover .imagem-link {
 .container{
     border-radius: 3px;
     position: relative;
-    max-height: 30vh;
+    height: 30vh;
     overflow-y: hidden;
     background-color: #c9bead;
     display: flex;
