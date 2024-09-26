@@ -18,6 +18,6 @@ $(document).ready(function(){
     })
 
     $('#cancelar').click(function () {  
-        $('form').slideup();
+        $('form').slideUp();
     })
 })
